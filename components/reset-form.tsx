@@ -46,7 +46,7 @@ const ResetForm = () => {
     <CardWrapper
       headerLabel="Confirming your email address"
       title="Confirming now..."
-      backButtonHref="/auth/login"
+      backButtonHref="/sign-in"
       backButtonLabel="Back to login"
     >
       <div className="flex items-center w-full justify-center">

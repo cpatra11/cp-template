@@ -10,6 +10,13 @@ export const {
   signIn,
   signOut,
 } = NextAuth({
+  pages: {
+    signIn: "/sign-in",
+    signOut: "/signout",
+    error: "/auth/error",
+    verifyRequest: "/verify-email",
+    newUser: "/register",
+  },
   callbacks: {
     async signIn({ user, account }) {
       if (account?.provider !== "credentials") {
@@ -36,6 +43,7 @@ export const {
         },
       };
     },
+
     async jwt({ token }) {
       // console.log("token in jwt", token);
       if (!token.sub) return token;

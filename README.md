@@ -1,3 +1,24 @@
+.env
+use resend api key and remove EMAIL_SENDING_ADDRESS and EMAIL_SENDING_PASSWORD if using resend.
+if not using resend, then use EMAIL_SENDING_ADDRESS and EMAIL_SENDING_PASSWORD.
+
+```bash
+RESEND_API_KEY=
+RESEND_API_KEY_PASS=
+DATABASE_URL=
+
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=
+
+GOOGLE_CLIENT_ID=""
+GOOGLE_CLIENT_SECRET=""
+
+UPLOADTHING_TOKEN=
+
+EMAIL_SENDING_ADDRESS=
+EMAIL_SENDING_PASSWORD=
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

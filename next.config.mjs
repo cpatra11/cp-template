@@ -1,7 +1,5 @@
-import withLlamaIndex from "llamaindex/next";
-
 /** @type {import('next').NextConfig} */
-const nextConfig = withLlamaIndex({
+const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ["pdf-parse"],
     outputFileTracingIncludes: {
@@ -20,6 +18,6 @@ const nextConfig = withLlamaIndex({
   env: {
     RESEND_API_KEY: process.env.RESEND_API_KEY,
   },
-});
+};
 
 export default nextConfig;

@@ -14,8 +14,7 @@ import { ResetPasswordSchema } from "@/schemas";
 import { Input } from "@/components/ui/input";
 import { z } from "zod";
 import { useState } from "react";
-import { login } from "@/actions/login";
-import Link from "next/link";
+
 import CardWrapper from "@/components/auth/card-wrapper";
 import { Button } from "@/components/ui/button";
 import { FormError } from "@/components/auth/form-error";

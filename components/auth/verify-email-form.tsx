@@ -2,9 +2,9 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState, useCallback } from "react";
-import CardWrapper from "./auth/card-wrapper";
-import { FormSuccess } from "./auth/form-success";
-import { FormError } from "./auth/form-error";
+import CardWrapper from "./card-wrapper";
+import { FormSuccess } from "./form-success";
+import { FormError } from "./form-error";
 import { newVerification } from "@/actions/new-verification";
 
 const VerifyEmailForm = () => {

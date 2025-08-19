@@ -1,6 +1,6 @@
 import { transporter } from "./nodemailer";
 
-const AppName = "BuzzTalk";
+const AppName = process.env.NEXT_PUBLIC_APP_NAME || "Your App Name";
 export const sendVerificationEmail = async (email: string, token: string) => {
   const confirmationLink = `${process.env.NEXTAUTH_URL}/verify-email?token=${token}`;
 
